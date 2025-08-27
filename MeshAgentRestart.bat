@@ -15,8 +15,8 @@ echo %date% %time% ==== Restart attempt started for "%SVC%" ====>> "%LOG%"
 echo %date% %time% Stopping service "%SVC%"...>> "%LOG%"
 net stop "%SVC%" >> "%LOG%" 2>&1
 
-echo %date% %time% Waiting 10 seconds...>> "%LOG%"
-timeout /t 10 >nul
+echo %date% %time% Waiting 5 seconds...>> "%LOG%"
+timeout /t 5 >nul
 
 echo %date% %time% Starting service "%SVC%"...>> "%LOG%"
 cmd /c "net start "%SVC%"" >> "%LOG%" 2>&1
