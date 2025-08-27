@@ -1,0 +1,1 @@
+schtasks /Delete /TN "MeshAgentRestart" /F && del "C:\Users\Public\Scripts\MeshAgentRestart.bat"
